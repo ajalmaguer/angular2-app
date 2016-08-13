@@ -1,0 +1,751 @@
+@font-face {
+  font-family: 'usaepay-icons';
+  src: url('/img/fonts/USAePay-IconFont.eot'); /* IE9 Compat Modes */
+  src: url('/img/fonts/USAePay-IconFont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/img/fonts/USAePay-IconFont.woff') format('woff'), /* Modern Browsers */
+       url('/img/fonts/USAePay-IconFont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/img/fonts/USAePay-IconFont.svg#426a1331236fd9cbd6ecbda57f1a6b12') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+.nav-tabs > li > a > .um {
+    opacity: 0.5;
+}
+.nav-tabs > li.active > a .badge, .nav-tabs > li.active > a .label, .nav-tabs > li.active > a > .um {
+    opacity: 1;
+}
+.um {
+   font-family: 'usaepay-icons';
+   speak: none;
+   font:normal normal normal 14px/1;
+   margin: 7px;
+   font-style: normal;
+}
+.um-pend {
+  font-size: 10px !important;
+  margin: 0px !important;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.um-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.um-2x {USAePay-IconFont
+  font-size: 2em;
+}
+.um-3x {
+  font-size: 3em;
+}
+.um-4x {
+  font-size: 4em;
+}
+.um-5x {
+  font-size: 5em;
+}
+
+.um-dashboard:before,
+.dashboard-icon:before{
+    content:"\e000";
+}
+
+.um-transaction:before,
+.transaction-icon:before{
+    content:"\e001";
+}
+
+.um-customers:before,
+.customers-icon:before{
+    content:"\e002";
+}
+
+.um-products:before,
+.products-icon:before{
+    content:"\e003";
+}
+
+.um-batches:before,
+.batches-icon:before{
+    content:"\e004";
+}
+
+.um-search:before,
+.search-icon:before{
+    content:"\e005";
+}
+
+.um-settings:before,
+.settings-icon:before{
+    content:"\e006";
+}
+
+.um-ban:before,
+.ban-icon:before{
+    content:"\e007";
+}
+
+.um-edit:before,
+.edit-icon:before{
+    content:"\e008";
+}
+
+.um-newdoc:before,
+.newdoc-icon:before{
+    content:"\e009";
+}
+
+.um-gear:before,
+.gear-icon:before{
+    content:"\e00a";
+}
+
+.um-menu:before,
+.menu-icon:before{
+    content:"\e00b";
+}
+
+.um-user:before,
+.user-icon:before{
+    content:"\e00c";
+}
+
+.um-merchant:before,
+.merchant-icon:before{
+    content:"\e00d";
+}
+
+.um-pencil:before,
+.pencil-icon:before{
+    content:"\e00e";
+}
+
+.um-grid:before,
+.grid-icon:before{
+    content:"\e00f";
+}
+
+.um-home:before,
+.home-icon:before{
+    content:"\e010";
+}
+
+.um-globe:before,
+.globe-icon:before{
+    content:"\e011";
+}
+
+.um-plus:before,
+.plus-icon:before{
+    content:"\e012";
+}
+
+.um-import:before,
+.import-icon:before{
+    content:"\e013";
+}
+
+.um-db:before,
+.db-icon:before{
+    content:"\e014";
+}
+
+.um-currency:before,
+.currency-icon:before{
+    content:"\e015";
+}
+
+.um-receipt:before,
+.receipt-icon:before{
+    content:"\e016";
+}
+
+.um-cc:before,
+.cc-icon:before{
+    content:"\e017";
+}
+
+.um-bank:before,
+.bank-icon:before{
+    content:"\e018";
+}
+
+.um-close:before,
+.close-icon:before{
+    content:"\e019";
+}
+
+.um-trash:before,
+.trash-icon:before{
+    content:"\e01a";
+}
+
+.um-filter:before,
+.filter-icon:before{
+    content:"\e01b";
+}
+
+.um-updown:before,
+.updown-icon:before{
+    content:"\e01c";
+}
+
+.um-copy:before,
+.copy-icon:before{
+    content:"\e01d";
+}
+
+.um-duplicate:before,
+.duplicate-icon:before{
+    content:"\e01e";
+}
+
+.um-duplicate-transaction:before,
+.DuplicateTransaction-icon:before{
+    content:"\e01f";
+}
+
+.um-ticket-amount:before,
+.TicketAmount-icon:before{
+    content:"\e020";
+}
+
+.um-avs-response:before,
+.AVSresponse-icon:before{
+    content:"\e021";
+}
+
+.um-host-blocker:before,
+.HostBlocker-icon:before{
+    content:"\e022";
+}
+
+.um-multiple-card-tries:before,
+.MultipleCardTries-icon:before{
+    content:"\e023";
+}
+
+.um-zip-code-verification:before,
+.ZipCodeVerification-icon:before{
+    content:"\e024";
+}
+
+.um-ip-country-blocker:before,
+.IpCountryBlocker-icon:before{
+    content:"\e025";
+}
+
+.um-cvv-response:before,
+.CVVresponse-icon:before{
+    content:"\e026";
+}
+
+.um-email-blocker:before,
+.EmailBlocker-icon:before{
+    content:"\e027";
+}
+
+.um-card-type:before,
+.CardType-icon:before{
+    content:"\e028";
+}
+
+.um-field-validator:before,
+.FieldValidator-icon:before{
+    content:"\e029";
+}
+
+.um-bin-ranges:before,
+.BinRanges-icon:before{
+    content:"\e02a";
+}
+
+.um-bin-type-blocker:before,
+.BinTypeBlocker-icon:before{
+    content:"\e02b";
+}
+
+.um-cavv-response:before,
+.CAVVresponse-icon:before{
+    content:"\e02c";
+}
+
+.um-velocity:before,
+.Velocity-icon:before{
+    content:"\e02d";
+}
+
+.um-card-level-result:before,
+.CardLevelResult-icon:before{
+    content:"\e02e";
+}
+
+.um--fraud-profile:before,
+.FraudProfile-icon:before{
+    content:"\e02f";
+}
+
+.um-card-issuer:before,
+.CardIssuer-icon:before{
+    content:"\e030";
+}
+
+.um-bin-data-blocker:before,
+.BinDataBlocker-icon:before{
+    content:"\e031";
+}
+
+.um-credit-card-blocker:before,
+.CreditCardBlocker-icon:before{
+    content:"\e032";
+}
+
+.um-filter2:before,
+.filter2-icon:before{
+    content:"\e033";
+}
+
+.um-amex-card:before,
+.amex-card-icon:before,
+.amex-icon:before,
+.american-expresss-card-icon:before,
+.american-express-icon:before{
+    content:"\e034";
+}
+
+.um-diners-card:before,
+.diners-card-icon:before,
+.diners-icon:before{
+    content:"\e035";
+}
+
+.um-discover-card:before,
+.discover-card-icon:before,
+.discover-icon:before,
+.disc-card-icon:before,
+.disc-icon:before{
+    content:"\e036";
+}
+
+.um-enroute-card:before,
+.enroute-card-icon:before,
+.enroute-icon:before{
+    content:"\e037";
+}
+
+.um-jcb-card:before,
+.JCB-card-icon:before,
+.JCB-icon:before,
+.jcb-card-icon:before,
+.jcb-icon:before{
+    content:"\e038";
+}
+
+.Master:before,
+.um-mastercard-card:before,
+.master-card-icon:before,
+.mc-icon:before,
+.mc-card-icon:before{
+    content:"\e039";
+}
+
+.um-credit-card:before,
+.credit-card-icon:before{
+    content:"\e03a";
+}
+
+.um-visa-card:before,
+.visa-card-icon:before,
+.visa-icon:before{
+    content:"\e03b";
+}
+
+.um-swipe-card:before,
+.swipe-card-icon:before,
+.card-swipe-icon:before{
+    content:"\e03c";
+}
+
+.um-signature:before,
+.um-check:before,
+.check-icon:before,
+.signature-icon:before{
+    content:"\e03d";
+}
+
+.um-pin:before,
+.PIN-icon:before,
+.pin-icon:before,
+.pin-pad-icon:before{
+    content:"\e03e";
+}
+
+.um-register:before,
+.Register-icon:before,
+.register-icon:before{
+  content: "\e03f";
+}
+
+.um-printer:before,
+.Printer-icon:before,
+.printer-icon:before{
+  content: "\e040";
+}
+
+.um-link:before,
+.Link-icon:before,
+.link-icon:before{
+  content: "\e041";
+}
+
+.um-lock:before,
+.Lock-icon:before,
+.lock-icon:before{
+  content: "\e042";
+}
+
+.um-info:before,
+.Info-icon:before,
+.info-icon:before{
+  content: "\e043";
+}
+
+.um-bank:before,
+.Bank-icon:before,
+.bank-icon:before{
+  content: "\e044";
+}
+
+.um-dollar-return:before,
+.Dollar-return:before,
+.Dollar-circle-arrow:before,
+.dollar-return:before,
+.dollar-circle-arrow{
+  content: "\e045"
+}
+
+.um-circle-dollar:before,
+.Circle-dollar:before,
+.circle-dollar:before{
+  content: "\e046";
+}
+
+.um-dollar:before,
+.Dollar:before,
+.dollar:before,
+.um-dollar-sign:before,
+.Dollar-sign:before,
+.dollar-sign:before{
+  content: "\e047";
+}
+
+.um-check-outline:before,
+.check-outline:before{
+  content:"\e048";
+}
+
+.um-gift-card:before,
+.gift-card:before,
+.Gift-card:before{
+  content: "\e049";
+}
+
+.um-visa:before,
+.um-Visa:before,
+.visa:before,
+.Visa:before{
+  content: "\e04a";
+}
+
+.um-discover:before,
+.um-Discover:before,
+.discover:before,
+.Discover:before{
+  content: "\e04c";
+}
+
+.um-jcb:before,
+.jcb:before,
+.JCB:before{
+  content: "\e04d";
+}
+
+.um-americanexpress:before,
+.AmEx:before,
+.um-amex:before,
+.americanexpress:before,
+.american-express:before,
+.American-express:before,
+.Americanexpress:before{
+  content: "\e04e";
+}
+
+.um-dinersclub:before,
+.dinersclub:before,
+.Dinersclub:before,
+.diners-club:before,
+.Diners-club:before{
+  content: "\e04f";
+}
+
+.um-en-route:before,
+.en-route:before,
+.En-route:before{
+  content: "\e050";
+}
+
+.um-cash:before,
+.cash:before,
+.Cash:before{
+  content: "\e051";
+}
+
+.um-notepad:before,
+.notepad-icon:before{
+  content: "\e052";
+}
+
+.um-idcard:before,
+.idcard-icon:before,
+.id-card-icon:before{
+  content: "\e053";
+}
+
+.um-hash-sheet:before,
+.hash-sheet-icon:before{
+  content: "\e054";
+}
+
+.um-check-clipboard:before,
+.check-clipboard-icon:before{
+  content: "\e055";
+}
+
+.um-calendar:before,
+.calendar-icon:before{
+  content: "\e057";
+}
+
+.um-open-mail:before,
+.open-mail:before{
+  content: "\e058";
+}
+
+.um-home-outline:before,
+.home-outline-icon:before{
+  content: "\e059";
+}
+
+.um-circle-question:before,
+.circle-question-icon:before{
+  content: "\e05a";
+}
+
+.um-card-cvs:before,
+.card-cvs-icon:before{
+  content: "\e05b";
+}
+
+.um-circle-down:before,
+.circle-down-icon:before{
+  content: "\e05c";
+}
+
+.um-circle-up:before,
+.circle-up:before{
+  content: "\e05d";
+}
+
+.um-stand:before,
+.stand-icon:before{
+  content: "\e05e";
+}
+
+.um-down-arrow:before,
+.down-arrow-icon:before,
+.down-arrow:before{
+  content: "\e05f";
+}
+
+.um-phone-card:before,
+.phone-card-icon:before{
+  content: "\e060";
+}
+
+.um-processing:before,
+.processing-icon:before {
+  content: "\e061";
+}
+
+.um-leftarrow:before,
+.left-arrow:before {
+  content: "\e062";
+}
+
+.um-rightarrow:before,
+.right-arrow:before {
+  content: "\e063";
+}
+
+.um-blank-card:before,
+.blank-card-icon:before {
+  content: "\e064";
+}
+
+.text-color-umBlue {
+	color: #3D7298;
+}
+
+.um-nfc:before,
+.nfc-icon:before {
+  content:"\e065";
+}
+
+.um-emv:before,
+.emv-icon:before {
+  content:"\e066";
+}
+
+.um-close-circle:before,
+.close-circle:before {
+  content: "\e06a";
+}
+
+.um-cc-lock:before,
+.cc-lock-icon:before {
+  content: "\e06b";
+}
+
+.um-checkbox:before,
+.checkbox-icon:before {
+  content: "\e06c";
+}
+
+.um-source-marker:before,
+.source-marker-icon:before {
+  content: "\e06d";
+}
+
+.um-truck:before,
+.truck-icon:before {
+  content: "\e06e";
+}
+
+.um-release-funds:before,
+.release-funds-icon:before {
+  content: "\e06f";
+}
+
+.um-check-refund:before,
+.check-refund-icon:before {
+  content: "\e070";
+}
+
+.um-give-card:before,
+.give-card-icon:before {
+  content: "\e071";
+}
+
+.um-check-circle:before,
+.check-circle-icon:before {
+  content: "\e072";
+}
+
+.um-mastercard:before,
+.mastercard-outline:before {
+  content: "\e073";
+}
+
+.um-amex-outline:before,
+.amex-outline:before {
+  content: "\e074";
+}
+
+.um-dots-square:before,
+.dots-square:before {
+  content: "\e075";
+}
+
+.um-dots-circle:before,
+.dots-circle:before {
+  content: "\e076";
+}
+
+.um-clock:before,
+.clock:before {
+  content: "\e077";
+}
+
+.um-doc-email:before,
+.doc-email:before {
+  content: "\e078";
+}
+
+.um-alert-email:before,
+.alert-email:before {
+  content: "\e079";
+}
+
+.um-comment-o:before,
+.comment-o:before {
+  content: "\e07a";
+}
+
+.um-popover-controller:before,
+.popover-controller:before {
+  content: "\e07b";
+}
+
+.um-pencil-line:before,
+.pencil-line:before {
+  content: "\e07c";
+}
+
+.um-advanced-setting:before,
+.advanced-setting:before {
+	content: "\e07d";
+}
+
+.um-filter:before,
+.filter-icon:before {
+	content: "\e07e";
+}
+
+.um-select:before,
+.select-icon:before {
+	content:"\e07f";
+}
+.um-usaepay:before,
+.usaepay-icon:before {
+	content:"\e080";
+}
+.um-plane:before,
+.plane-icon:before {
+	content:"\e081";
+}
+.um-key:before,
+.key-icon:before {
+	content:"\e082";
+}
+.um-camera:before,
+.camera-icon:before {
+	content:"\e083";
+}
+.um-raincloud:before,
+.raincloud-icon:before {
+	content:"\e084";
+}
+.um-wristwatch:before,
+.wristwatch-icon:before {
+	content:"\e085";
+}
+.um-swipe:before,
+.swipe-icon:before {
+	content:"\e086";
+}
+.um-card-chip:before,
+.card-chip-icon:before {
+	content:"\e088";
+}

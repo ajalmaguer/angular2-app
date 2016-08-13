@@ -1,0 +1,69 @@
+(for testing purposes)
+<button class="btn btn-primary" (click)="myModal.open()"> 
+	<i class="glyphicon glyphicon-plus"></i>
+</button>
+
+
+<modal #myModal>
+		<modal-header>
+				<h1>Register Device</h1>
+		</modal-header>
+		<modal-content>
+
+		
+		<div class="modal-body">
+			<div class="row">
+				<div class="col-xs-12">
+					<form [formGroup]="newDevice">
+						<div class="form-group">
+							<div class="input-group input-group-sm">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+								<input class="form-control" type="text" name="Name" value="" placeholder="Name" formControlName="name">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group input-group-sm">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-hdd"></i></span>
+								<input class="form-control" type="text" name="type" value="" placeholder="Type of device" formControlName="deviceType">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group input-group-sm">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+								<input class="form-control" type="text" name="sourcekey" value="" placeholder="Source Key" formControlName="sourceKey">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group input-group-sm">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+								<input class="form-control" type="text" name="Timeout" value="" placeholder="Timeout" formControlName="timeout">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="tipsupport" style="display:block;">Tip Support</label>
+							<label class="radio-inline">
+								<input type="radio" name="inlineRadioOptions" value="on"> On
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="inlineRadioOptions" value="off"> Off
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="inlineRadioOptions" value="adjust"> Adjust
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="checkbox-inline">
+								<input type="checkbox" name="inlineRadioOptions" value="on"> Enable Standalone
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>    
+
+		</modal-content>
+		<modal-footer>
+			<button class="btn btn-default" (click)="myModal.close()">Close</button>
+			<button class="btn btn-primary" (click)="register()">Register</button>
+		</modal-footer>
+</modal>

@@ -1,0 +1,279 @@
+.row_spacing {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.col_spacing {
+    margin-top: 15px;
+}
+a:hover, a:active, a:visited, a, a:link {
+    text-decoration: none;
+}
+.pointer {
+    cursor: pointer;
+}
+
+.device {
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    padding: 0 13px 15px;
+    margin-left: -13px;
+    margin-right: -13px;
+    height: 150px;
+    border-top: 1px solid rgba(162, 162, 162, .2);
+}
+
+.info, .device h4, .sub-text {
+    color: rgba(162, 162, 162, 1);
+}
+.info:focus, .info:active, .info:hover {
+    color: rgba(57, 113, 155, 1);
+    outline: none;
+}
+.device .hidden_info {
+    position: absolute;
+    background-color: rgba(255,255,255, 1);
+    left: -200px;
+    width: 0%;
+    height: 150px;
+    text-align: center;
+    padding: 0 13px 0 0;
+    overflow: hidden;
+    transition: 1s all;
+    transition-timing-function: ease-in-out;
+}
+.device .hidden_info .sect_1 {
+    opacity: 0;
+    transition: .7s all;
+    transition-timing-function: ease-in-out;
+}
+.device:hover .hidden_info {
+    transition: .8s all;
+    transition-timing-function: ease-in-out;
+    width: 85%;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.15);
+}
+.device:hover .hidden_info .sect_1 {
+    transition: 1s all;
+    transition-timing-function: ease-in-out;
+    opacity: 1;
+}
+.device .sub-text h3{
+    font-size:  20px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: 200;
+    color: rgba(57, 113, 155, 1);
+}
+.sub-text span {
+    font-size: 12px;
+    margin-right: 5px;
+    color: rgba(80, 80, 79, 1)
+}
+.sub-text p {
+    font-size: 10px;
+}
+.sub-text .active_on {
+    color: rgba(0, 211, 0, 1);
+}
+.device h4 {
+    font-weight: 200;
+    font-size: 1.25em;
+}
+.device i {
+    font-size: 3.5em;
+}
+.device_header {
+    text-align: left;
+    padding: 15px 0 5px;
+}
+.device_header h6{
+    color: rgba(162, 162, 162, 1);
+    margin: 0;
+}
+.sub_col_1 {
+    float: left;
+    width: 85%;
+}
+.sub_col_2 {
+    float: left;
+    width: 15%;
+    padding-top: 15px;
+    padding-left: 13px;
+    text-align: center;
+}
+.sub_col_2 .device_status {
+    /*animation-duration: 2s;
+    animation-iteration-count: infinite;*/
+}
+.sub_col_2 i {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+.sub_col_2 .glyphicon-play {
+    color: rgba(55, 145, 222, 1);
+}
+.sub_col_2 .glyphicon-console {
+    color: rgba(130, 130, 130, 1);
+}
+.sub_col_2 .on {
+    animation-name: blink_on;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.sub_col_2 .off {
+    animation-name: blink_off;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.sub_col_2 .standby {
+
+}
+.sect_1{
+    padding-top: 15px;
+    float: left;
+    width: 90%;
+}
+.sect_1 p{
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(0, 142, 255, 1);
+}
+.sect_2 {
+    float: left;
+    width: 10%;
+    height: 150px;
+    padding: 15px 4px;
+
+}
+.device .sect_2 i {
+    display: block;
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+.device .sub_col_2 .con_closed {
+    color: rgba(162, 162, 162, 1) !important;
+}
+.device .sub_col_2 .glyphicon.glyphicon-signal {
+    color: rgba(57, 113, 155, 1);
+}
+.device .sect_2 .glyphicon.glyphicon-trash {
+    cursor: pointer;
+    color: rgba(218, 30, 6, .5);
+}
+.sect_2 .glyphicon.glyphicon-trash:hover{
+    color: rgba(218, 30, 6, 1);
+}
+
+.device_start {
+    color:rgba(0, 211, 0, 1);
+}
+.device_off {
+    color: rgba(218, 30, 6, 1);
+}
+.device_primary {
+    color: rgba(57, 113, 155, 1);
+}
+#registration_loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 2000;
+    background-color: rgba(0,0,0, .7);
+}
+#registration_loader .load_box {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    color: rgba(255,255,255,1);
+}
+.load_box h4 {
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    font-size: 1.8em;
+}
+.load_box i {
+    font-size: 4em;
+    margin: 10px;
+    animation-name: spin;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+.load_box p {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+#registration_loader .load_box #cancel_reg {
+    display: inline-block;
+    margin: 0 auto;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1em;
+    border: 1px solid rgba(255,255,255, 1);
+    border-radius: 2px;
+    padding: 3px 6px;
+    letter-spacing: .05em;
+}
+#registration_loader .load_box #cancel_reg:hover {
+    transition: .5s all;
+    color: rgba(0,0,0, 1);
+    background-color: rgba(255,255,255, 1);
+}
+/*-====================================*/
+/* ANIMATION STUFF*/
+@keyframes blink_on {
+    0% { color: rgba(0, 211, 0, 1);}
+    25%{color: rgba(52, 177, 61, 1);}
+    50%{color: rgba(0, 211, 0, 1);}
+    75%{color: rgba(52, 177, 61, 1);}
+    100% {color: rgba(0, 211, 0, 1);}
+}
+@keyframes blink_off {
+    0% { color: rgba(218, 30, 6, 1);}
+    25%{color: rgba(217, 78, 78, 1);}
+    50%{color: rgba(218, 30, 6, 1);}
+    75%{color: rgba(217, 78, 78, 1);}
+    100% {color: rgba(218, 30, 6, 1);}
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* ============================ ======*/
+/* RESPONSIVE AREA*/
+@media only screen and (min-width: 992px){
+    .device {
+        height: 150px;
+    }
+    .device .hidden_info {
+        height: 150px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .device {
+        margin-left: 0;
+        margin-right: 0;
+        border-top: none;
+        height: 150px;
+        border: 1px solid rgba(162, 162, 162, .2);
+        transition: 1s all;
+    }
+    .device .hidden_info {
+        height: 150px;
+    }
+}
